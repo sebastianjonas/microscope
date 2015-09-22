@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="meteor-packages-auto-import-browser" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$USER_HOME$/.meteor/packages/twbs_bootstrap/3.3.5/web.browser/packages/twbs_bootstrap.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$USER_HOME$/.meteor/packages/twbs_bootstrap/3.3.5/web.browser/packages/twbs_bootstrap.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>
