@@ -1,0 +1,16 @@
+<template name="errors">
+    <div class="errors">
+        {{#each errors}}
+            {{>error}}
+        {{/each}}
+    </div>
+</template>
+
+<template name="error">
+    <div class="alert alert-danger" role="alert">
+        <!-- role alert zeigt im CSS auf .alert wo die animation mit
+        fade out nach 2,7 sec angegeben ist -->g
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        {{message}}
+    </div>
+</template>
