@@ -1,3 +1,4 @@
 Meteor.publish('posts', function () {
-   return Posts.find();
+   var postsle = Posts.find();
+   return postsle;
 });
