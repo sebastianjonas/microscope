@@ -22,3 +22,5 @@ underscore
 iron:router
 meteor-platform
 sacha:spin
+ian:accounts-ui-bootstrap-3
+accounts-password

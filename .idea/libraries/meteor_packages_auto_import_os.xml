@@ -2,27 +2,15 @@
   <library name="meteor-packages-auto-import-os" type="javaScript">
     <properties>
       <sourceFilesUrls>
-        <item url="file://$USER_HOME$/.meteor/packages/iron_middleware-stack/1.0.9/os/packages/iron_middleware-stack.js" />
-        <item url="file://$USER_HOME$/.meteor/packages/iron_controller/1.0.8/os/packages/iron_controller.js" />
-        <item url="file://$USER_HOME$/.meteor/packages/iron_core/1.0.8/os/packages/iron_core.js" />
-        <item url="file://$USER_HOME$/.meteor/packages/iron_location/1.0.9/os/packages/iron_location.js" />
-        <item url="file://$USER_HOME$/.meteor/packages/iron_url/1.0.9/os/packages/iron_url.js" />
-        <item url="file://$USER_HOME$/.meteor/packages/iron_layout/1.0.8/os/packages/iron_layout.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/anti_i18n/0.4.3/os/packages/anti:i18n.js" />
         <item url="file://$USER_HOME$/.meteor/packages/twbs_bootstrap/3.3.5/os/packages/twbs_bootstrap.js" />
-        <item url="file://$USER_HOME$/.meteor/packages/iron_router/1.0.9/os/packages/iron_router.js" />
-        <item url="file://$USER_HOME$/.meteor/packages/iron_dynamic-template/1.0.8/os/packages/iron_dynamic-template.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/sacha_spin/2.3.1/os/packages/sacha_spin.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
-      <root url="file://$USER_HOME$/.meteor/packages/iron_middleware-stack/1.0.9/os/packages/iron_middleware-stack.js" />
-      <root url="file://$USER_HOME$/.meteor/packages/iron_controller/1.0.8/os/packages/iron_controller.js" />
-      <root url="file://$USER_HOME$/.meteor/packages/iron_core/1.0.8/os/packages/iron_core.js" />
-      <root url="file://$USER_HOME$/.meteor/packages/iron_location/1.0.9/os/packages/iron_location.js" />
-      <root url="file://$USER_HOME$/.meteor/packages/iron_layout/1.0.8/os/packages/iron_layout.js" />
-      <root url="file://$USER_HOME$/.meteor/packages/iron_url/1.0.9/os/packages/iron_url.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/anti_i18n/0.4.3/os/packages/anti:i18n.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/sacha_spin/2.3.1/os/packages/sacha_spin.js" />
       <root url="file://$USER_HOME$/.meteor/packages/twbs_bootstrap/3.3.5/os/packages/twbs_bootstrap.js" />
-      <root url="file://$USER_HOME$/.meteor/packages/iron_router/1.0.9/os/packages/iron_router.js" />
-      <root url="file://$USER_HOME$/.meteor/packages/iron_dynamic-template/1.0.8/os/packages/iron_dynamic-template.js" />
     </CLASSES>
     <SOURCES />
   </library>
