@@ -10,8 +10,14 @@
             <a class="navbar-brand" href="{{pathFor 'postsList'}}">Microscope</a>
         </div>
         <div class="collapse navbar-collapse" id="navigation">
+            <ul class="nav navbar-nav">
+                {{#if currentUser}}
+                    <!-- The currentUser helper is provided to us by the accounts package and is the Spacebars equivalent of Meteor.use -->
+                <li><a href="{{pathFor 'postSubmit' align="right"}}">Submit Post</a> </li>
+                {{/if}}
+            </ul>
             <ul class="nav navbar-nav navbar-right">
-                {{> loginButtons align="left" }}
+                {{> loginButtons }}
 
             </ul>
         </div>
