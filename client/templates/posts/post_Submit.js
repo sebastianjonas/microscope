@@ -20,6 +20,12 @@ Template.postSubmit.events({
          function will use to construct a URL for us to browse to.
         */
 
+       //Prüfung ob Felder eingefüllt. Im anderen tutorial wurde das direkt über Jquery gemacht
+       var errors = validatePost(post);
+       if (errors.title || errors.url) {
+           return Session.set('postSubmitErrors', errors);
+       }
+
        Meteor.call('postInsert', post, function (error, result) {
            //display the error to the user and abort
            if (error) {
@@ -34,6 +40,20 @@ Template.postSubmit.events({
 //       Router.go('postsList');
 
    }
+});
+
+Template.postSubmit.onCreated(function () {
+    Session.set('postSubmitErrors', {});
+});
+
+//werden im HTML aufgerufen
+Template.postSubmit.helpers({
+    errorMessage: function (field) {
+        return Session.get('postSubmitErrors')[field];
+    },
+    errorClass: function(field) {
+        return !! Session.get('postSubmitErrors')[field] ? 'has-error' : '';
+    }
 });
 
 
