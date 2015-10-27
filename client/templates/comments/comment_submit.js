@@ -15,10 +15,11 @@ Template.commentSubmit.events({
     'submit form': function(e, template) {
         e.preventDefault();
 
-        var $body = $(e.target).find('[name=body]');
+        var $body = $(e.target).find('[name=body]').val();
+        var postId = template.data._id
         var comment = {
-            body: $body.val(),
-            postId: template.data._id
+            body: $body,
+            postId: postId
         };
 
         var errors = {};
