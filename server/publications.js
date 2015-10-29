@@ -1,5 +1,9 @@
-Meteor.publish('posts', function () {
-   var postsle = Posts.find();
+Meteor.publish('posts', function (options) {
+   check(options, {
+       sort: Object,
+       limit: Number
+   })
+    var postsle = Posts.find({}, options);
    return postsle;
 });
 
