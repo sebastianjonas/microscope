@@ -6,6 +6,15 @@ Template.postItem.helpers({
     },
     ownPost: function(){
       return this.userId === Meteor.userId();
+    },
+
+    upvotedClass: function(){
+     var userID = Meteor.userId();
+        if (userID && !_.include(this.upvoters, userID)) {
+            return 'butn-primary upvotable';
+        } else {
+            return 'disabled';
+        }
     }
 
     //CommentsCount wurde zuerst über CommentCollection ermittelt
@@ -19,4 +28,12 @@ Template.postItem.helpers({
     }
     */
 
+
+});
+
+Template.postItem.events({
+   'click .upvoteable': function (event) {
+       event.preventDefault();
+       Meteor.call('upvote', this._id);
+   }
 });
